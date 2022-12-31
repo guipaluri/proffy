@@ -29,6 +29,11 @@
         bottom: -28px;
     }
 
+    #search-teachers .input.block + .input.block,
+    #search-teachers .select-block + .select.block {
+        margin-top: 0;
+    }
+
     #page-teacher-list main {
         padding: 3.2rem 0;
         max-width:  740px;
