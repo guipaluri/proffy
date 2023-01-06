@@ -1,20 +1,35 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useCallback } from 'react'
+import Landing from './src/pages/Landing';
+import * as SplashScreen from 'expo-splash-screen';
+
+import { Archivo_400Regular, Archivo_700Bold, useFonts } from '@expo-google-fonts/archivo';
+import { Poppins_400Regular, Poppins_600SemiBold } from '@expo-google-fonts/poppins';
+
+SplashScreen.preventAutoHideAsync();
 
 export default function App() {
+  let [fontsLoaded] = useFonts({
+    Archivo_400Regular,
+    Archivo_700Bold,
+    Poppins_400Regular,
+    Poppins_600SemiBold
+  });
+
+  useCallback(async () => {
+    if (fontsLoaded) {
+      await SplashScreen.hideAsync();
+    }
+  }, [fontsLoaded]);
+
+  if (!fontsLoaded) {
+    return null;
+  }
+
   return (
-    <View style={styles.container}>
-      <Text>Hello World</Text>
+    <>
+      <Landing />
       <StatusBar style="auto" />
-    </View>
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
