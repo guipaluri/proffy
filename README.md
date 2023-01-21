@@ -9,7 +9,6 @@
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/guipaluri/proffy?style=flat-square">
   <img alt="GitHub" src="https://img.shields.io/github/license/guipaluri/proffy?style=flat-square"> 
   <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%237519C1?style=flat-square"><br/>
-  <a href="https://app.getpostman.com/run-collection/25221997-e4c98934-7250-4025-8056-f68ad3cf3d39?action=collection%2Ffork&collection-url=entityId%3D25221997-e4c98934-7250-4025-8056-f68ad3cf3d39%26entityType%3Dcollection%26workspaceId%3D505c2b36-2001-4d86-ab8a-d7f0252b5ef4" target="_blank"><img src="https://run.pstmn.io/button.svg" alt="Run in Insomnia"></a>
 </p>
 <p align="center">
   <a href="#bookmark-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
